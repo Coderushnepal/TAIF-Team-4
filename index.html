@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Test</h2>
+
+
+
+<script>
+
+// Constructor function for Person objects
+function Person(names, roles ) {
+  this.names = names;
+  this.roles = roles;
+ 
+}
+document.write("<br><b> Question no.1 Name with roles:</b><br>");
+document.write("<br>");
+ // Create 5 Person objects
+    var pratigya = new Person("Pratigya", "Backend Developer");
+    var jagriti = new Person("Jagriti", "Frontend Developer");
+    var Shreya = new Person("Shreya", "Designer");
+    var Sanima = new Person("Sanima", "Data Analyst");
+ 
+    
+
+    var arrs = [pratigya,jagriti,Shreya,Sanima];
+    for(i = 0; i<4;i++){
+    document.write( "<b>"+arrs[i].names+"</b> is a  "+"<i><b>"+ arrs[i].roles+"</b></i>. <br>");
+    }
+
+    
+document.write("<br> <b>Question no.2 Data Analyst name:</b><br>");
+document.write("<br>");
+for(i = 0; i<4;i++){
+if(arrs[i].roles == "Data Analyst"){
+document.write( "Our Data analyst is <b>"+arrs[i].names+"</b>");
+}	
+}
+
+document.write("<br><br> <b>Question no.3 Rashika was given a Shriya postion <b><br><br>");
+
+arrs[2].roles="CTO";
+var Rasika = new Person("Rasika", "Designer");
+arrs.push(Rasika);
+console.log(arrs[2].roles);
+
+for(i = 0; i<5;i++){
+    document.write( "<b>"+arrs[i].names+"</b> is a  "+"<i><b>"+ arrs[i].roles+"</b></i>. <br>");
+}
+</script>
+
+</body>
+</html>
+
