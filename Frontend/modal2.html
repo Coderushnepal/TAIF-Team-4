@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Modal</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style>
+            ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+        </style>
+    </head>
+    <body>
+
+
+        <!--Trigger-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ManyRouteModal">
+                Launch demo modal
+        </button>
+        <!--End of Trigger-->
+        
+                     
+      
+
+
+    <!--Second Modal Starts-->
+    <div class="modal fade" id="ManyRouteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="row">
+                            <div class='col-md-1'>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="material-icons" style='font-size:30px;'>&#xe5c4;</i>
+                                </button>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-9">
+                                <h5 class="modal-title" id="exampleModalLabel" style='font-size:20px;'>Your Public Vehicle Routes</h5>
+                        
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="modal-body">
+                                           <div class="row">
+                                               <div class="col-md-8">
+
+                                               </div>
+                                               <div class="col-md-4">
+                                                    <i class="material-icons" style='font-size:30px;'> 	&#xe87a;</i><a href="#">See in Map</a>
+                                               </div>
+                                           </div>                      
+                            
+                                            
+                                            <ul class="timeline" style='font-size:18px;'>
+                                               <li>Softwarica<br></li>
+                                               <li>Dillibazar PipalBot<br></li>
+                                               <li>Putalisadak<br></li>
+                                               <li>Baneshwor<br></li>
+                                               <li>Koteshwor<br></li>
+                                            </ul>
+                    </div>
+                                    
+                                
+                        
+                    </div>
+                        
+                </div>              
+            </div>            
+        </div>
+
+    <!--Second Modal Ends-->
+
+        
+        
+    
+    </body>
+</html>

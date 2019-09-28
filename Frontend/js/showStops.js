@@ -18,8 +18,8 @@ jQuery(function ($)  {
 
 function stopList(route) {
     route_name.text(route.routename);
-    vechicle_type.text("-> Vehicle: "+route.type);  
-    fare.text("-> Fare: NPR-"+route.cost);
+    vechicle_type.text("Vehicle: "+route.type);  
+    fare.text(" Fare: NPR-"+route.cost);
     $.each(route.stop, function (index, stopDetails) {   
                 let myRows = [];
                 myRows.push(show_stops(stopDetails,index));
