@@ -6,14 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sajilo Bato</title>
- 
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="vendors/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons.css">
-
-
     <link rel="stylesheet" href="css/style.css">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
@@ -29,11 +27,13 @@
         <nav class="navbar navbar-expand-sm navbar-default">
 
             <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
+                    aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="dashboard.html"><img src="images/SajiloBato.png" alt="Logo" height="100px" width ="100px"></a>
-                <a class="navbar-brand hidden" href="dashboard.html"><img src="images/SajiloBato.png" alt="Logo" height="5px"></a>
+                <a class="navbar-brand" href="dashboard.html"><img src="images/SajiloBato.png" alt="Logo" height="100px"
+                        width="100px"></a>
+                <a class="navbar-brand hidden" href="dashboard.html"><img src="images/SajiloBato.png" alt="Logo"></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -41,39 +41,43 @@
                     <li class="active">
                         <a href="dashboard.html"> <i class="menu-icon fa fa-search"></i>Search your destination </a>
                     </li>
-                
+
                     <div class="form-group">
-                       
+
                         <div class="input-group">
-                            
-                                <span class="input-group-addon hide"><i class="fa fa-street-view" aria-hidden="true"></i></span>
-                                <input  type="text" class="form-control hide" name="Your Location" placeholder="Your Location" id="yourlocation" required>
+
+                            <span class="input-group-addon hide"><i class="fa fa-street-view"
+                                    aria-hidden="true"></i></span>
+                            <input type="text" class="form-control hide" name="Your Location"
+                                placeholder="Your Location" id="yourlocation" required>
                         </div><br>
                         <div class="input-group">
-                            
-                            <span class="input-group-addon hide"><i class="fa fa-map"></i></span>
-                            <input  type="text" class="form-control hide" name="Destination" placeholder="Destination Location"id="destination" required>
-                    </div><br>
-                         <button type="button" id="Search-location" class="btn btn-md btn-block hide">Search Location</button>
-                                           
-                                         
-                                        </div>
-                    
-                    
-              
-                                    </div>
-                                </div>
-                                </div>
-    
 
-               
+                            <span class="input-group-addon hide"><i class="fa fa-map"></i></span>
+                            <input type="text" class="form-control hide" name="Destination"
+                                placeholder="Destination Location" id="destination" required>
+                        </div><br>
+                        <button type="button" id="Search-location" class="btn btn-md btn-block hide">Search
+                            Location</button>
+
+
+                    </div>
+
+
+
+            </div>
+            </div>
+            </div>
+
+
+
             <!-- /.navbar-collapse -->
-         
+
         </nav>
     </aside><!-- /#left-panel -->
 
     <!-- Left Panel -->
-    
+
     <!-- Right Panel -->
 
     <div id="right-panel" class="right-panel">
@@ -85,43 +89,65 @@
 
                 <div class="col-sm-3">
                     <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
-                   
                 </div>
-                    
 
                 <div class="col-sm-9">
-                    <div class="user-area dropdown float-right">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="user-avatar rounded-circle" src="images/admin.png" alt="User Avatar">
-                        </a>
-
-                        <div class="user-menu dropdown-menu">
-                                <a class="nav-link" href="profile.html"><i class="fa fa-user"></i> My Profile</a>
-
-                                <a class="nav-link" id="logout"><i class="fa fa-power-off"></i> Logout</a>
-                        </div>
+                    <div class="float-right">
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ManyRouteModal">View Details</button>
                     </div>
-
-                   
                 </div>
-          
-
         </header><!-- /header -->
         <!-- Header-->
 
 
 
 
-                        <!-- Right Panel -->
+        <!-- Right Panel -->
+<div class="container">
+        <div class="modal fade" id="ManyRouteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel" style='font-size:30px;'>Your Public Vehicle Routes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-2"><i class="fa fa-bus" style="font-size:30px"></i></div>
+                                        <div class="col-md-10" style='font-size:20px'>
+                                            Sajha Bus : (Softwarica - Imadole)
+                                        </div>                          
+                                    </div> 
+                                    <br>
+                                    <div class="row">
+                                        <div class='col-md-8'></div>
+                                        <div class='col-md-4'>
+                                          <a href="#">See Details...</a>
+                                        </div>
+                                    </div>                          
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>              
+                </div>            
+            </div>
+    <!--map view-->
+</div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-      
-   
-   
+
 
 </body>
 

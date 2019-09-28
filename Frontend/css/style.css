@@ -1456,54 +1456,6 @@ header .form-inline {
     padding: 0 !important;
     text-overflow: ellipsis; }
 
-.user-area {
-  float: right;
-  padding-right: 0;
-  position: relative; }
-  .user-area .user-menu {
-    background: #fff;
-    border: none;
-    font-family: 'Open Sans';
-    left: inherit !important;
-    right: 0;
-    top: 55px !important;
-    margin: 0;
-    max-width: 150px;
-    padding: 5px 10px;
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-    min-width: 150px; }
-    .user-area .user-menu .nav-link {
-      color: #272c33;
-      display: block;
-      font-size: 14px;
-      line-height: 22px;
-      padding: 5px 0; }
-  .user-area .user-avatar {
-    float: right;
-    margin-top: 4px;
-    width: 32px; }
-  .user-area .user-info .name {
-    color: #8c8c8c;
-    font-size: 14px;
-    position: relative;
-    text-transform: uppercase; }
-  .user-area .count {
-    background: #d9534f;
-    border-radius: 50%;
-    color: #fff;
-    font-family: 'Open Sans';
-    font-size: 9px;
-    font-weight: 700;
-    float: right;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    text-align: center; }
-  .user-area .dropdown-toggle:after {
-    display: none; }
-
 #menuToggle2 {
   padding-left: 25px; }
 
