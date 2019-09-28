@@ -985,7 +985,7 @@ textarea {
   width: 100%; }
 
 aside.left-panel {
-  background: #272c33;
+  background:#637BAD;
   display: table-cell;
   height: 100vh;
   min-height: 100%;
@@ -1011,6 +1011,7 @@ aside.left-panel {
     color: #f1f2f7 !important;
     font-family: 'Open Sans';
     font-size: 22px;
+    
     float: none;
     line-height: 50px;
     margin: 0;
@@ -1032,9 +1033,12 @@ aside.left-panel {
     .navbar .navbar-brand span {
       font-weight: 600; }
     .navbar .navbar-brand img {
-      margin-top: -50px;
-      margin-bottom: -50px;
-      max-width: 220px; }
+      height: 170px;
+      width: 230px;
+      margin:20px;
+      border-radius: 30%;
+background:#f0f0f5;
+     }
     .navbar .navbar-brand.hidden {
       display: none; }
   .navbar .menu-title {
