@@ -42,8 +42,7 @@ $.ajax({
         stopList(route);
     },
     error: function () {
-        alert("Please Login First!");
-        $(location).attr("href","login.html");
+     
     }
 });
 
