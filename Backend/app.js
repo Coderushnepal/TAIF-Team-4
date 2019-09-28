@@ -50,6 +50,7 @@ app.use('*', cors({
 }));
 
 
+
 app.use('/', indexRouter);
 
 app.use('/routes',vehicleRouter);

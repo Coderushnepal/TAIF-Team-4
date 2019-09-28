@@ -971,6 +971,7 @@ button,
 input,
 textarea {
   box-shadow: none;
+
   outline: 0 !important; }
 
 .no-padding {
@@ -985,7 +986,7 @@ textarea {
   width: 100%; }
 
 aside.left-panel {
-  background: #272c33;
+  background:#344364;
   display: table-cell;
   height: 100vh;
   min-height: 100%;
@@ -1011,6 +1012,8 @@ aside.left-panel {
     color: #f1f2f7 !important;
     font-family: 'Open Sans';
     font-size: 22px;
+    background: #344364;
+    
     float: none;
     line-height: 50px;
     margin: 0;
@@ -1032,9 +1035,12 @@ aside.left-panel {
     .navbar .navbar-brand span {
       font-weight: 600; }
     .navbar .navbar-brand img {
-      margin-top: -50px;
-      margin-bottom: -50px;
-      max-width: 220px; }
+      height: 170px;
+      width: 230px;
+      margin:20px;
+      border-radius: 30%;
+background:#f0f0f5;
+     }
     .navbar .navbar-brand.hidden {
       display: none; }
   .navbar .menu-title {
@@ -1051,6 +1057,7 @@ aside.left-panel {
     width: 100%; }
   .navbar .navbar-nav {
     float: none;
+    background:#344364;
     position: relative; }
     .navbar .navbar-nav li {
       width: 100%; }
@@ -1107,7 +1114,7 @@ aside.left-panel {
           .navbar .navbar-nav li.menu-item-has-children a:hover:before {
             color: #fff; }
         .navbar .navbar-nav li.menu-item-has-children .sub-menu {
-          background: #272c33;
+          background:#344364;
           border: none;
           box-shadow: none;
           overflow-y: hidden;
@@ -1323,7 +1330,7 @@ header.fixed-top {
   line-height: 38px; }
 
 header .form-inline {
-  background: #263238;
+  background: #344364;
   display: none;
   height: 70px;
   margin: 0;
@@ -1338,7 +1345,7 @@ header .form-inline {
     margin: 0 auto;
     position: relative; }
     header .form-inline .search-form input[type="text"] {
-      background: #263238;
+      background: #344364;
       border: none;
       border-radius: 0;
       box-shadow: none;
@@ -1380,7 +1387,7 @@ header .form-inline {
   .header-left .dropdown .dropdown-toggle {
     background: transparent;
     border: none;
-    color: #272c33;
+    color: #344364;
     font-size: 16px; }
     .header-left .dropdown .dropdown-toggle:after {
       display: none; }
@@ -1397,7 +1404,7 @@ header .form-inline {
     .header-left .dropdown .dropdown-toggle:active, .header-left .dropdown .dropdown-toggle:focus, .header-left .dropdown .dropdown-toggle:visited {
       background: none !important;
       border-color: transparent !important;
-      color: #272c33 !important; }
+      color: #fff !important; }
   .header-left .dropdown .dropdown-menu {
     background: #fff;
     border: none;
@@ -1704,6 +1711,8 @@ header .form-inline {
 .btn,
 .button {
   display: inline-block;
+ background: #637bad;
+ color:white;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -2446,3 +2455,6 @@ header .form-inline {
         .right-panel .content #bootstrap-data-table_wrapper .table td,
         .right-panel .content #bootstrap-data-table_wrapper .table th {
           padding: 5px; } }
+
+
+       

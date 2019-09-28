@@ -46,6 +46,25 @@ router.route('/')
     });
     
 
-
+    
+    
+    router.route('/:routename/search')
+    .get((req, res, next) => {
+        VehicleRoute.find({ routename: req.params.routename })
+        
+            .then((vroute) => {
+                if (vroute != null) {
+                    res.statusCode = 200;
+                    res.setHeader('Content-Type', 'application/json');
+                    res.json(vroute);
+                }
+                else {
+                    err = new Error('Route ' + req.params.routename + ' not found');
+                    err.status = 404;
+                    return next(err);
+                }
+            }, (err) => next(err))
+            .catch((err) => next(err));
+    })
 
 module.exports=router;
